@@ -27,6 +27,9 @@ st.markdown("Enter the folder path below to generate metadata for all files in t
 # Input for folder path
 folder_path = st.text_input("Enter Folder Path:")
 
+# Debug: Display the entered folder path
+st.write(f"Entered folder path: {folder_path}")
+
 # Button to generate metadata
 if st.button("Generate Metadata"):
     if os.path.exists(folder_path):
